@@ -1,0 +1,158 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f9f9f9; /* Light background */
+}
+
+header {
+    background: #4a90e2; /* Bright blue */
+    color: #fff;
+    padding: 15px 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffd700; /* Gold color on hover */
+}
+
+.hero {
+    background: url('https://images.unsplash.com/photo-1568662331684-0e7a7a5fd2a4') no-repeat center center/cover;
+    color: #fff;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.hero-content {
+    background-color: rgba(74, 144, 226, 0.7);
+    padding: 20px;
+    border-radius: 8px;
+    animation: fadeIn 1s; /* Fade-in animation */
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+section {
+    padding: 20px;
+    margin: 20px 0;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: slideIn 0.5s forwards; /* Slide-in animation */
+}
+
+@keyframes slideIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+h2 {
+    border-bottom: 2px solid #4a90e2;
+    padding-bottom: 10px;
+}
+
+.project {
+    background: #fff; /* White background for project cards */
+    padding: 15px;
+    margin: 10px 0;
+    border-left: 5px solid #4a90e2; /* Border color */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition */
+    border-radius: 8px; /* Rounded corners */
+}
+
+.project:hover {
+    transform: translateY(-5px); /* Lift effect */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Shadow effect */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input, textarea {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s; /* Transition for input focus */
+}
+
+input:focus, textarea:focus {
+    border-color: #4a90e2; /* Change border color on focus */
+}
+
+button {
+    background: #4a90e2; /* Bright blue */
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s, transform 0.3s; /* Button transition */
+}
+
+button:hover {
+    background: #3e80c1; /* Darker blue on hover */
+    transform: scale(1.05); /* Scale effect on hover */
+}
+
+footer {
+    text-align: center;
+    padding: 15px 0;
+    background: #333;
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.contact-info {
+    margin-top: 20px;
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
+
+.social-links {
+    margin-top: 10px;
+}
+
+.social-links a {
+    margin-right: 15px; /* Space between icons */
+}
+
+.social-links img {
+    width: 24px; /* Icon size */
+    height: 24px; /* Icon size */
+    transition: transform 0.3s; /* Smooth hover effect */
+}
+
+.social-links img:hover {
+    transform: scale(1.1); /* Scale up on hover */
+}
